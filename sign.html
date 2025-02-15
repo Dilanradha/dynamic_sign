@@ -47,7 +47,7 @@
             const signatureData = signatureCanvas.toDataURL("image/png");
 
             try {
-                const response = await fetch("YOUR_SCRIPT_URL", {
+                const response = await fetch("https://script.google.com/macros/s/AKfycbzFiMFCtEoqbiBpGi5jf9cuWgKP6k0320vtNqg1thR8xydNddtOGJVzasOCkCc7AsI/exec", {
                     method: "POST",
                     body: JSON.stringify({
                         action: "saveSignature",
